@@ -13,15 +13,15 @@
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      color: #e0b3ff;
+      color: #b6ffb3;
     }
 
     header {
       text-align: center;
       padding: 2rem;
-      background-color: rgba(51, 0, 51, 0.85);
-      color: white;
-      text-shadow: 0 0 15px #cc66ff;
+      background-color: rgba(0, 100, 0, 0.85);
+      color: #ccffcc;
+      text-shadow: 0 0 15px #00ff00;
       font-size: 2.5rem;
     }
 
@@ -30,24 +30,25 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       padding: 2rem;
-      background-color: rgba(26, 0, 26, 0.85);
+      background-color: rgba(0, 50, 0, 0.85);
     }
 
-    .gallery img {
+    .item {
+      text-align: center;
+      color: #aaffaa;
+    }
+
+    .item img {
       width: 100%;
       height: auto;
-      border: 2px solid #cc66ff;
+      border: 2px solid #00cc00;
       border-radius: 12px;
-      box-shadow: 0 0 20px #cc66ff;
+      box-shadow: 0 0 20px #00ff00;
       transition: transform 0.3s ease;
     }
 
-    .gallery img:hover {
+    .item img:hover {
       transform: scale(1.05);
-    }
-
-    .gallery a {
-      display: block;
     }
 
     .whatsapp-button {
@@ -60,13 +61,14 @@
       display: inline-flex;
       align-items: center;
       text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.2s;
+      box-shadow: 0 4px 8px rgba(0,128,0,0.6);
+      transition: transform 0.2s, background-color 0.3s;
       margin: 2rem auto;
     }
 
     .whatsapp-button:hover {
       transform: scale(1.05);
+      background-color: #1ebe5d;
     }
 
     .whatsapp-button img {
@@ -82,8 +84,8 @@
     footer {
       text-align: center;
       padding: 1.5rem;
-      background-color: rgba(51, 0, 51, 0.85);
-      color: #e0b3ff;
+      background-color: rgba(0, 70, 0, 0.85);
+      color: #b6ffb3;
       font-size: 0.9rem;
     }
   </style>
@@ -95,23 +97,45 @@
   </header>
 
   <section class="gallery">
-    <!-- Alle afbeeldingen linken naar WhatsApp -->
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://wietkopen.nl/image/cache/catalog/Hasj/tripple-lemon-treehasj-kopen-online-230-340x280-0.JPG" alt="Blue Cooky Haze Joint" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://wietkopen.nl/image/cache/catalog/voorgedraaide-joint-kopen-bij-wietkopen-nl-470x345-3214932877.jpg" alt="Lemon Haze Joint" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://wietkopen.nl/image/cache/catalog/voorgedraaide-joint-kopen-bij-wietkopen-nl-470x345-3214932877.jpg" alt="Joint" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://wietkopen.nl/image/cache/catalog/voorgedraaide-joint-kopen-bij-wietkopen-nl-470x345-3214932877.jpg" alt="Joint" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://wietkopen.nl/image/cache/catalog/voorgedraaide-joint-kopen-bij-wietkopen-nl-470x345-3214932877.jpg" alt="Joint" /></a>
-    <!-- Voorbeeldproducten -->
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+11" alt="Product 11" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+12" alt="Product 12" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+13" alt="Product 13" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+14" alt="Product 14" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+15" alt="Product 15" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+16" alt="Product 16" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+17" alt="Product 17" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+18" alt="Product 18" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+19" alt="Product 19" /></a>
-    <a href="https://wa.me/31647152399" target="_blank"><img src="https://via.placeholder.com/300x200?text=Product+20" alt="Product 20" /></a>
+    <!-- OG Kush -->
+    <div class="item">
+      <a href="https://wa.me/31647152399" target="_blank">
+        <img src="https://wietkopen.nl/image/cache/catalog/Hasj/tripple-lemon-treehasj-kopen-online-230-340x280-0.JPG" alt="OG Kush" />
+      </a>
+      <p>OG Kush</p>
+    </div>
+
+    <!-- Gorilla Cream -->
+    <div class="item">
+      <a href="https://wa.me/31647152399" target="_blank">
+        <img src="https://wietkopen.nl/image/cache/catalog/voorgedraaide-joint-kopen-bij-wietkopen-nl-470x345-3214932877.jpg" alt="Gorilla Cream" />
+      </a>
+      <p>Gorilla Cream</p>
+    </div>
+
+    <!-- Blue Cooky -->
+    <div class="item">
+      <a href="https://wa.me/31647152399" target="_blank">
+        <img src="https://via.placeholder.com/300x200?text=Blue+Cooky" alt="Blue Cooky" />
+      </a>
+      <p>Blue Cooky</p>
+    </div>
+
+    <!-- Serbert Green -->
+    <div class="item">
+      <a href="https://wa.me/31647152399" target="_blank">
+        <img src="https://via.placeholder.com/300x200?text=Serbert+Green" alt="Serbert Green" />
+      </a>
+      <p>Serbert Green</p>
+    </div>
+
+    <!-- Icey Sweet -->
+    <div class="item">
+      <a href="https://wa.me/31647152399" target="_blank">
+        <img src="https://via.placeholder.com/300x200?text=Icey+Sweet" alt="Icey Sweet" />
+      </a>
+      <p>Icey Sweet</p>
+    </div>
   </section>
 
   <div class="button-container">
