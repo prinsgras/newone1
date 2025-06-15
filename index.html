@@ -23,7 +23,6 @@
       color: #ff4444;
       text-shadow: 0 0 15px #ff0000;
       font-size: 2.5rem;
-      font-weight: bold;
     }
 
     .gallery {
@@ -31,37 +30,21 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       padding: 2rem;
-      background-color: rgba(0, 50, 0, 0.75);
+      background-color: rgba(0, 50, 0, 0.85);
     }
 
     .item {
       text-align: center;
       color: #aaffaa;
-      position: relative;
-      overflow: hidden;
     }
 
     .item img {
       width: 100%;
       height: auto;
-      border: 2px solid rgba(0, 204, 0, 0.3);
+      border: 2px solid #00cc00;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+      box-shadow: 0 0 20px #00ff00;
       transition: transform 0.3s ease;
-      filter: brightness(0.9) saturate(150%) hue-rotate(85deg);
-      mix-blend-mode: lighten;
-    }
-
-    .item::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 255, 0, 0.25); /* green overlay */
-      mix-blend-mode: screen;
-      pointer-events: none;
     }
 
     .item img:hover {
@@ -72,8 +55,6 @@
       margin-top: 0.5rem;
       font-size: 1.1rem;
       font-weight: bold;
-      z-index: 2;
-      position: relative;
     }
 
     footer {
@@ -83,18 +64,12 @@
       color: #b6ffb3;
       font-size: 0.9rem;
     }
-
-    footer img {
-      vertical-align: middle;
-      margin-left: 8px;
-      height: 20px;
-    }
   </style>
 </head>
 <body>
 
   <header>
-    PRE-ROLLED Super Stuff<br />
+    PRE-ROLLED Super Stuff <br>
     PUSH PHOTOS
   </header>
 
@@ -111,7 +86,7 @@
     <div class="item">
       <a href="https://wa.me/31647152399" target="_blank">
         <img src="https://wietkopen.nl/image/cache/catalog/voorgedraaide-joint-kopen-bij-wietkopen-nl-470x345-3214932877.jpg" alt="Gorilla Cream" />
-      </a>
+      </a> 
       <p>Gorilla Cream</p>
     </div>
 
@@ -142,7 +117,6 @@
 
   <footer>
     © 2025 Voorgerolde Super Stuff. Alle rechten voorbehouden.
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/18%2B_icon.svg/32px-18%2B_icon.svg.png" alt="18+" />
   </footer>
 
 </body>
