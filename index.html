@@ -42,10 +42,13 @@
     .item img {
       width: 100%;
       height: auto;
-      border: 2px solid #00cc00;
+      border: 2px solid rgba(0, 204, 0, 0.5);
       border-radius: 12px;
-      box-shadow: 0 0 20px #00ff00;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
       transition: transform 0.3s ease;
+      filter: hue-rotate(90deg) saturate(120%) brightness(1.1);
+      mix-blend-mode: screen;
+      background-color: rgba(0, 255, 0, 0.1);
     }
 
     .item img:hover {
