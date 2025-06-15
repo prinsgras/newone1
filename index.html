@@ -31,24 +31,37 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       padding: 2rem;
-      background-color: rgba(0, 50, 0, 0.85);
+      background-color: rgba(0, 50, 0, 0.75);
     }
 
     .item {
       text-align: center;
       color: #aaffaa;
+      position: relative;
+      overflow: hidden;
     }
 
     .item img {
       width: 100%;
       height: auto;
-      border: 2px solid rgba(0, 204, 0, 0.5);
+      border: 2px solid rgba(0, 204, 0, 0.3);
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
       transition: transform 0.3s ease;
-      filter: hue-rotate(90deg) saturate(120%) brightness(1.1);
+      filter: brightness(0.9) saturate(150%) hue-rotate(85deg);
+      mix-blend-mode: lighten;
+    }
+
+    .item::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 255, 0, 0.25); /* green overlay */
       mix-blend-mode: screen;
-      background-color: rgba(0, 255, 0, 0.1);
+      pointer-events: none;
     }
 
     .item img:hover {
@@ -59,6 +72,8 @@
       margin-top: 0.5rem;
       font-size: 1.1rem;
       font-weight: bold;
+      z-index: 2;
+      position: relative;
     }
 
     footer {
